@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+{% block content %}
+<h2 class="page-title">Students</h2>
+
+<div class="form-row">
+	<input id="sname" class="form-control" placeholder="Name">
+	<input id="sroll" class="form-control" placeholder="Roll No">
+	<button class="btn btn-primary" onclick="addStudent()">Add Student</button>
+</div>
+
+<h3>Student List</h3>
+<table id="studentTable"></table>
+
+<script>loadStudents();</script>
+{% endblock %}

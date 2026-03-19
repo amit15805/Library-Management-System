@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Library Management</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<header class="site-header">
+    <div class="brand"><a href="/">Library</a></div>
+    <nav class="site-nav">
+        <a class="nav-link" href="/">Home</a>
+        <a class="nav-link" href="/books">Books</a>
+        <a class="nav-link" href="/students">Students</a>
+        <a class="nav-link" href="/issue">Issue/Return</a>
+    </nav>
+</header>
+
+<main class="main">
+    <div class="container">
+        {% block content %}{% endblock %}
+    </div>
+</main>
+
+<footer class="site-footer">
+    <div class="container">&copy; {{ now().year if now is defined else "2025" }} Library Management</div>
+</footer>
+
+<script src="/static/script.js"></script>
+</body>
+</html>

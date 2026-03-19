@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+{% block content %}
+<h2 class="page-title">Issue / Return Book</h2>
+
+<div class="form-row">
+	<select id="studentSelect" class="form-control"></select>
+	<select id="bookSelect" class="form-control"></select>
+	<button class="btn btn-primary" onclick="issueBook()">Issue Book</button>
+</div>
+
+<h3>Issued Books</h3>
+<table id="issueTable"></table>
+
+<script>loadIssuePage();</script>
+{% endblock %}

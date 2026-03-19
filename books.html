@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+{% block content %}
+<h2 class="page-title">Books</h2>
+
+<div class="form-row">
+	<input id="btitle" class="form-control" placeholder="Title">
+	<input id="bauthor" class="form-control" placeholder="Author">
+	<input id="bcopies" type="number" class="form-control" placeholder="Copies" min="1">
+	<button class="btn btn-primary" onclick="addBook()">Add Book</button>
+</div>
+
+<h3>Book List</h3>
+<table id="bookTable"></table>
+
+<script>loadBooks();</script>
+{% endblock %}

@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+{% block content %}
+<section class="hero">
+	<h1 class="page-title">Library Management System</h1>
+	<p class="muted">Welcome to the library portal. Use the navigation above to manage books, students and issue operations.</p>
+</section>
+<section>
+	<h3>Quick actions</h3>
+	<div class="form-row">
+		<a class="btn btn-primary" href="/books">Manage Books</a>
+		<a class="btn btn-ghost" href="/students">Manage Students</a>
+		<a class="btn btn-ghost" href="/issue">Issue / Return</a>
+	</div>
+</section>
+{% endblock %}
